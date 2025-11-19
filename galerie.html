@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Photos - Cabinet d'Avocats & Huissiers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Galerie Photos
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Découvrez notre cabinet, nos locaux et les moments importants de notre activité.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Façade du cabinet" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop" alt="Salle d'accueil" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=300&h=200&fit=crop" alt="Salle d'audience" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=200&fit=crop" alt="Bureau avocat" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=300&h=200&fit=crop" alt="Equipe en réunion" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=200&fit=crop" alt="Bibliothèque juridique" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&h=200&fit=crop" alt="Cabinet exterieur" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=300&h=200&fit=crop" alt="Salle de réunion" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Accès handicapés" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=200&fit=crop" alt="Salle d'attente" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=300&h=200&fit=crop" alt="Tribunal local" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=200&fit=crop" alt="Signature contrat" class="w-full h-48 object-cover rounded-xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+
+        // Lightbox functionality
+        const galleryImages = document.querySelectorAll('.grid img');
+        const lightbox = document.createElement('div');
+        lightbox.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden';
+        lightbox.innerHTML = '<img class="max-w-full max-h-full" id="lightbox-image"><button class="absolute top-4 right-4 text-white text-2xl" id="close-lightbox">&times;</button>';
+        document.body.appendChild(lightbox);
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                document.getElementById('lightbox-image').src = img.src;
+                document.getElementById('lightbox-image').alt = img.alt;
+                lightbox.classList.remove('hidden');
+            });
+        });
+
+        document.getElementById('close-lightbox').addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
