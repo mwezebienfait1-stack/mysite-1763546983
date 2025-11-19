@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - Cabinet d'Avocats & Huissiers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Nos Services
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Une expertise pluridisciplinaire au service de vos droits et de vos intérêts.
+            </p>
+        </div>
+    </section>
+
+    <!-- Domaines d'Intervention Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    Nos Services
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Droit des Affaires -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="briefcase" class="text-blue-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Droit des Affaires</h3>
+                    <p class="text-gray-600 leading-relaxed text-left">Le droit des affaires regroupe l'ensemble des règles qui encadrent la vie des entreprises. Notre cabinet accompagne les entrepreneurs, sociétés, commerçants et investisseurs dans toutes leurs démarches juridiques : création d'entreprise, rédaction de contrats, sécurisation des transactions commerciales, gestion des litiges et recouvrement des créances. Nous veillons à protéger vos intérêts et à assurer la conformité de vos activités dans un environnement économique complexe et en constante évolution.</p>
+                </div>
+
+                <!-- Droit de la Famille -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="users" class="text-purple-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Droit de la Famille</h3>
+                    <p class="text-gray-600 leading-relaxed text-left">Le droit de la famille concerne les relations entre les membres d'une même famille et les obligations légales qui en découlent. Nous intervenons dans les procédures de divorce, séparation, garde d'enfants, pension alimentaire, adoption et succession. Chaque situation familiale étant unique, nous offrons un accompagnement humain, confidentiel et personnalisé pour vous aider à traverser ces moments sensibles en toute sérénité.</p>
+                </div>
+
+                <!-- Droit Immobilier -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="home" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Droit Immobilier</h3>
+                    <p class="text-gray-600 leading-relaxed text-left">Le droit immobilier encadre toutes les opérations liées aux biens fonciers : ventes, locations, litiges fonciers, copropriétés et expropriations. Notre cabinet vous assiste dans la sécurisation de vos transactions immobilières, la rédaction de contrats, la résolution des conflits entre propriétaires et locataires ainsi que dans les démarches de régularisation foncière. Nous garantissons une expertise solide pour vous protéger dans vos projets immobiliers.</p>
+                </div>
+
+                <!-- Constats d'huissier -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="file-text" class="text-green-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Constats d'huissier</h3>
+                    <p class="text-gray-600 leading-relaxed text-left">Le constat d'huissier est un acte officiel permettant de prouver une situation, un dommage ou un fait précis. Il constitue une preuve incontestable devant les tribunaux. Notre étude réalise des constats dans de nombreux domaines : litiges entre voisins, dégâts matériels, état des lieux, preuves numériques, conflits commerciaux, abandon de chantier, ou encore constatation d'inftractions. Grâce à nos interventions rapides et rigoureuses, vous disposez d'une preuve solide en cas de procédure judiciaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
