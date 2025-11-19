@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités & Conseils juridiques - Cabinet d'Avocats & Huissiers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Actualités & Conseils juridiques
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Retrouvez ici nos analyses, décryptages et conseils juridiques sur les sujets qui concernent vos droits au quotidien.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Procédure judiciaire" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="briefcase" class="text-blue-600 mr-3"></i>
+                            <span class="text-sm text-gray-600 font-medium">Droit Civil</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Les étapes d'une procédure de recouvrement judiciaire
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Découvrez les démarches à entreprendre pour récupérer une créance en toute légalité.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span>Lire la suite</span>
+                            <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Constat d'huissier" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="file-text" class="text-blue-600 mr-3"></i>
+                            <span class="text-sm text-gray-600 font-medium">Constat d'Huissier</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Comment se déroule un constat d'huissier ?
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Un constat peut faire toute la différence dans un litige. Voici ce que vous devez savoir.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span>Lire la suite</span>
+                            <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1567417536451-0b2e7b3c94d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Droit du travail" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="users" class="text-blue-600 mr-3"></i>
+                            <span class="text-sm text-gray-600 font-medium">Droit du Travail</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Droit du travail : que faire en cas de licenciement abusif ?
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Les recours, indemnisations et procédures disponibles.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            <span>Lire la suite</span>
+                            <i data-feather="arrow-right" class="ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
