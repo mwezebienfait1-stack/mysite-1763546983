@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez notre cabinet - Cabinet d'Avocats & Huissiers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Contactez notre cabinet
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Notre équipe est disponible pour répondre à toutes vos questions et vous orienter vers le service adapté.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Envoyez-nous un message</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="nom" class="block text-sm font-medium text-gray-700 mb-2">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="telephone" class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="objet" class="block text-sm font-medium text-gray-700 mb-2">Objet de la demande *</label>
+                            <input type="text" id="objet" name="objet" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 resize-vertical"></textarea>
+                        </div>
+                        <div>
+                            <label for="document" class="block text-sm font-medium text-gray-700 mb-2">Ajouter un document (PDF - optionnel)</label>
+                            <input type="file" id="document" name="document" accept=".pdf" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                            <i data-feather="send" class="mr-2"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Contact Details -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Nos coordonnées</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="text-blue-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Adresse du cabinet</h3>
+                                    <p class="text-gray-600">Avenue de la Justice<br>41114 Kinshasa, RDC</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="text-blue-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Téléphone</h3>
+                                    <p class="text-gray-600">+243 88888888</p>
+                                    <p class="text-sm text-gray-500">Urgences huissier : 24h/24</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-blue-600 mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Email officiel</h3>
+                                    <p class="text-gray-600">contact@cabinet.cd</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Horaires d'ouverture</h2>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Lundi–Vendredi</span>
+                                <span class="text-gray-600 font-medium">8h–18h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Samedi</span>
+                                <span class="text-gray-600 font-medium">9h–13h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-700">Dimanche</span>
+                                <span class="text-gray-600 font-medium">Fermé</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                            <p class="text-sm text-blue-800">
+                                <i data-feather="alert-circle" class="inline mr-2"></i>
+                                Pour les urgences d'huissier : disponibilité 24h/24 et 7j/7
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Nous trouver</h2>
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.5678!2d15.3222!3d-4.3224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a34d2b2b2b2b2b%3A0x1a6a34d2b2b2b2b2b!2sAvenue%20de%20la%20Justice%2C%2041114%20Kinshasa%2C%20RDC!5e0!3m2!1sfr!2sfr!4v1690630472135!5m2!1sfr!2sfr"
+                                width="100%"
+                                height="300"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                class="rounded-lg">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        feather.replace();
+
+        // Initialize EmailJS
+        (function(){
+            emailjs.init("your_public_key_here"); // Replace with your actual EmailJS public key
+        })();
+
+        // Handle contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Prepare template parameters
+            const templateParams = {
+                from_name: formData.get('nom'),
+                from_email: formData.get('email'),
+                phone: formData.get('telephone'),
+                subject: formData.get('objet'),
+                message: formData.get('message'),
+                to_email: 'mwezebienfait1@gmail.com'
+            };
+
+            // Send email using EmailJS
+            emailjs.send('your_service_id_here', 'your_template_id_here', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Votre message a été envoyé avec succès!');
+                    form.reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Une erreur s\'est produite lors de l\'envoi du message. Veuillez réessayer.');
+                });
+        });
+    </script>
+</body>
+</html>
