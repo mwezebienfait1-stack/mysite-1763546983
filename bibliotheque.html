@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque Juridique - Cabinet d'Avocats & Huissiers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Bibliothèque Juridique
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Ressources juridiques gratuites pour comprendre vos droits et obligations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Guide Divorce -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="divorce">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Guide Divorce" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Guide complet du divorce
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Tout savoir sur les procédures, pensions alimentaires, garde d'enfants et démarches administratives.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recouvrement Créances -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="creances">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Recouvrement Créances" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Recouvrement des créances impayées
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Méthodes légales pour récupérer vos créances : injonction de payer, saisie, procédure judiciaire.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Transactions Immobilières -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="immobilier">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Transactions Immobilières" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Acheter et vendre un bien immobilier
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Les étapes clés, documents obligatoires et pièges à éviter lors d'une transaction immobilière.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Création Entreprise -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="entreprise">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Création Entreprise" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Créer son entreprise en toute sécurité
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Choix de statut, démarches administratives, statuts juridiques et obligations légales.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Constats Huissier -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="constats">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Constats Huissier" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Les constats d'huissier : quand et comment ?
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Les différents types de constats, leurs utilisations en justice et modalités d'intervention.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Succession -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg" id="succession">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Succession" class="w-full h-48 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            Tout savoir sur la succession
+                        </h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Testament, héritiers, réserve héréditaire, fiscalité et démarches après un décès.
+                        </p>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center w-full">
+                            <i data-feather="download" class="mr-2"></i>
+                            Télécharger (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Components -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
